@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/quiz.css"/>
+    </head>
+
+    <body>
+    <div class="quiz">
+
+        <header>
+            <h1>Rekenen</h1>
+        </header>
+
+        <div id="student">
+
+            <form id="studentForm">
+                <label for="fname">Naam:</label>
+                <br>
+                <input type="text" id="fname"  name="fname">
+                <div id="newName" hidden></div>
+                <br>
+                <label for="klas">Klas:</label>
+                <br>
+                <select id="klas">
+                    <option value="t2ha">T2Ha</option>
+                    <option value="t2h">T2H</option>
+                    <option value="t2hb">T2Hb</option>
+                    <option value="t2j">T2J</option>
+                </select>
+                <div id="newKlas" hidden></div>
+                <br><br>
+                <input id= "formButton" type="submit" value="Toevoegen">
+            </form>
+
+
+            <br>
+            <div id="gradeSection" hidden style="text-align: center">
+                <h2>Cijfer:</h2>
+                <h2 id="newGrade"></h2>
+                <div id="date"><b></b></div>
+            </div>
+        </div>
+
+        <button id="start">
+            start</button>
+        <div id="questions" style="visibility: hidden">
+
+
+            <div id="voortgang" >
+                <div class="nos" id="no1">1</div>
+                <div class="nos" id="no2">2</div>
+                <div class="nos" id="no3">3</div>
+                <div class="nos" id="no4">4</div>
+                <div class="nos" id="no5">5</div>
+                <div class="nos" id="no6">6</div>
+                <div class="nos" id="no7">7</div>
+                <div class="nos" id="no8">8</div>
+                <div class="nos" id="no9">9</div>
+                <div class="nos" id="no10">10</div>
+            </div>
+
+            <div id="resultaat"></div>
+            <div id="content">
+                <div id="vraag"></div>
+                <button id="btn1" class="button"><span id="option1"></span></button>
+                <button id="btn2" class="button"><span id="option2"></span></button>
+                <button id="btn3" class="button"><span id="option3"></span></button>
+                <button id="btn4" class="button"><span id="option4"></span></button>
+                <button id="volgende" class="navigatie">Volgende Vraag</button>
+                <button id="inleveren" class="navigatie">Inleveren</button>
+                <button id="vorige" class="navigatie">Vorige Vraag</button>
+            </div>
+
+        </div>
+
+
+        <hr>
+        <footer>
+            <p id="copyright">Project</p>
+            <div id="school">Michael Diaz</div>
+        </footer>
+
+    </div>
+
+        <script type="module" src="js/start.js"></script>
+    </body>
+
+</html>
